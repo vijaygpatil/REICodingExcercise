@@ -1,5 +1,9 @@
 package com.rei.question1;
 
+/**
+ * Program to convert increasing integer array to increasing ranges
+ * @author patil
+ */
 public class IntegerArrayToIncreasingRanges {
 	public static String sequenceNums3(int[] nums) {
 		StringBuilder sb = new StringBuilder();
@@ -8,7 +12,7 @@ public class IntegerArrayToIncreasingRanges {
 		int currentVal = 0;
 		int n = nums.length;
 		
-		//For numbers starting from index 1 to n - 1
+		//For numbers starting from index 1 to n - 1, detect increasing sequences and decreasing sequences.
 		for (int i = 1; i < n; i++) {
 			currentVal = nums[i];
 			
