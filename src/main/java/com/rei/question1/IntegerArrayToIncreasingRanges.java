@@ -5,7 +5,7 @@ package com.rei.question1;
  * @author patil
  */
 public class IntegerArrayToIncreasingRanges {
-	public static String sequenceNums3(int[] nums) {
+	public static String sequenceToRanges(int[] nums) {
 		StringBuilder sb = new StringBuilder();
 		int startIndex = 0;
 		int previousIndex = 0;
@@ -36,32 +36,32 @@ public class IntegerArrayToIncreasingRanges {
 	public static void main(String[] args) {
 		System.out.println("Example Range");
 		System.out.print("Array - { 1, 2, 3, 4, 5, 6, 3, 6, 8, 5, 8, 9, 4, 3, 5 }, Ranges: ");
-		System.out.println(sequenceNums3(new int[] { 1, 2, 3, 4, 5, 6, 3, 6, 8, 5, 8, 9, 4, 3, 5 }));
+		System.out.println(sequenceToRanges(new int[] { 1, 2, 3, 4, 5, 6, 3, 6, 8, 5, 8, 9, 4, 3, 5 }));
 		System.out.println();
 
 		System.out.println("Single Range");
 		System.out.print("Array - {1, 2, 3, 4, 5, 6, 7, 8, 9}, Ranges: ");
-		System.out.println(sequenceNums3(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }));
+		System.out.println(sequenceToRanges(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }));
 		System.out.println();
 
 		System.out.println("Double Range");
 		System.out.print("Array - {1, 2, 3, 4, 5, 3, 6, 8, 9, 10}, Ranges: ");
-		System.out.println(sequenceNums3(new int[] { 1, 2, 3, 4, 5, 3, 6, 8, 9, 10 }));
+		System.out.println(sequenceToRanges(new int[] { 1, 2, 3, 4, 5, 3, 6, 8, 9, 10 }));
 		System.out.println();
 
 		System.out.println("Triple Range");
 		System.out.print("Array - {1, 2, 3, 4, 5, 3, 6, 8, 9, 10, 1, 5, 8, 9}, Ranges: ");
-		System.out.println(sequenceNums3(new int[] { 1, 2, 3, 4, 5, 3, 6, 8, 9, 10, 1, 5, 8, 9 }));
+		System.out.println(sequenceToRanges(new int[] { 1, 2, 3, 4, 5, 3, 6, 8, 9, 10, 1, 5, 8, 9 }));
 		System.out.println();
 		
 		System.out.println("Sequence Numbers Reduces More than Once");
 		System.out.print("Array - { 1, 2, 3, 4, 5, 6, 3, 6, 8, 5, 8, 9, 4, 3, 5, 2, 3, 4, 6, 7, 1, 4, 5 }, Ranges: ");
-		System.out.println(sequenceNums3(new int[] { 1, 2, 3, 4, 5, 6, 3, 6, 8, 5, 8, 9, 4, 3, 2, 1, 5, 2, 3, 4, 6, 7, 1, 4, 5 }));
+		System.out.println(sequenceToRanges(new int[] { 1, 2, 3, 4, 5, 6, 3, 6, 8, 5, 8, 9, 4, 3, 2, 1, 5, 2, 3, 4, 6, 7, 1, 4, 5 }));
 		System.out.println();
 		
 		System.out.println("Sequence Numbers Reduces and Repeats More than Once");
 		System.out.print("Array - { 1, 2, 3, 4, 4, 4, 5, 6, 3, 6, 8, 5, 8, 8, 8, 9, 4, 3, 2, 1, 5, 2, 3, 4, 6, 7, 1, 4, 5 }, Ranges: ");
-		System.out.println(sequenceNums3(new int[] { 1, 2, 3, 4, 4, 4, 5, 6, 3, 6, 8, 5, 8, 8, 8, 9, 4, 3, 2, 1, 5, 2, 3, 4, 6, 7, 1, 4, 5 }));
+		System.out.println(sequenceToRanges(new int[] { 1, 2, 3, 4, 4, 4, 5, 6, 3, 6, 8, 5, 8, 8, 8, 9, 4, 3, 2, 1, 5, 2, 3, 4, 6, 7, 1, 4, 5 }));
 		System.out.println();
 	}
 }
